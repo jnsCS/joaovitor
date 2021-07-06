@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jon</title>
+    <style>
+        body{
+            background: black;
+        }
+        
+        .caixa{
+         width: 100%;   
+        }
+
+        .caixa ol{
+            display: flex;
+            justify-content: space-around;
+            list-style: inside ;
+            list-style-type:upper-roman;
+
+        }
+
+        .caixa ol li{
+            width: 100px;
+            height: 40px;
+            background:rgb(212, 0, 255);
+            color:black;
+            text-align: center;
+        }
+
+        .caixa .joao{
+            background: rgb(0, 238, 255);
+        }
+        
+        .caixa .Alan{
+            background: gold;
+        }
+
+        .caixa .Cleber{
+            background: green;
+        }
+
+        .caixa .Cleber.ativo{
+            background: indigo;
+        } 
+
+    </style>
+
+    
+</head>
+<body>
+    <div class="caixa">
+        <ol>
+            <li class="joao">Filipe
+                Maluco
+            </li>
+            <li class="Alan">Alan
+                Sortudo
+            </li>
+            <li class="Cleber">Cleber
+                Estudioso
+            </li>
+        </ol>
+    </div>
+    <script>
+        const Cleber = document.querySelector(".Cleber");
+
+        function ativo(){
+            Cleber.classList.toggle("ativo");
+        }
+
+        Cleber.addEventListener("click", ativo);
+    </script>
+
+</body>
+</html>
